@@ -1,0 +1,4 @@
+SetEnvIf X-Forwarded-For ^132\.234\.23\.200 right_env
+Order allow,deny
+Satisfy Any
+Allow from env=right_env    
